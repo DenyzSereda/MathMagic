@@ -1,0 +1,92 @@
+body{
+    margin: 1px;
+    overflow: visible;
+    height: 20000px;
+    width: 20000px;
+    background-color: rgb(251, 246, 239);
+
+
+}
+
+#multiplication-table {
+    position: absolute;
+    top:0%;
+    left:-0.268%;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 1;
+}
+#multiplication-table td {
+    font-size: 125%;
+    border: 1px solid black;
+    text-align: center;
+    transition: transform 0.15s ease;  
+    height: 50px;
+    min-width: 50px;
+    z-index: 1;
+}
+td:hover::before {
+    font-size: 60%;
+    content: attr(id);
+    position: absolute;
+    background-color: antiquewhite;
+    top: 38px;
+    left: 0;
+    padding-top: -10px;
+    padding-bottom: -10px;
+    padding: 2px;
+    z-index: 2;
+}
+
+#multiplication-table td:hover {
+    background-color: rgb(245, 221, 188);
+    transform: scale(1.5);
+    z-index: 4;
+}
+
+#main-row{
+    position: sticky;
+    border-collapse: collapse;
+    margin-bottom: -54px;
+    z-index: 2;
+    top: 0;
+    
+}
+#main-row td{ 
+    font-size: 125%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #faead1;
+    transition: transform 0.15s ease;  
+    height: 50px;
+    min-width: 50px;
+}
+
+
+#main-col{
+    float: left;
+    position: sticky;
+    left: 0;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+#main-col td{
+    position: sticky;
+    font-size: 125%;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #faead1;
+    transition: transform 0.15s ease;  
+    height: 50px;
+    min-width: 50px;
+}
+
+.highlight1 {
+    background-color: rgb(251, 145, 145);
+  }
+.highlight2 {
+    background-color: rgb(251, 251, 145);
+  }
+
+
